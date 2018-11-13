@@ -235,7 +235,7 @@
 		"\t\tprivate void InitializeData(${3:context}Context ctx)"'
 		"\t\t{",
 		"\t\t\tcontext = ctx;",
-		"\t\t\t_all = context.Passwd.ToList();",
+		"\t\t\t_all = context.${2:Class}.ToList();",
 		"\t\t}",
 		"\t\tIEnumerable<object> IGenericRepository.All",
 		"\t\t{",
