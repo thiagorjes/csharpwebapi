@@ -3,9 +3,9 @@
 "Create One in Repository": {
 		"prefix": "crone",
 		"body": [
-			"public ${1:returntype} Create(${1:returntype} p){",
+			"public object Create(object p){",
 			"\ttry\n\t{",
-			"\t\t${1:returntype} r = (context.${1:returntype}.Add(p)).Entity;",
+			"\t\t${1:returntype} r = (context.${1:returntype}.Add((${1:returntype})p)).Entity;",
             "\t\tcontext.SaveChanges();",
 		    "\t\treturn r;",
 			"\t}\n\tcatch(Exception ex)\n\t{",
@@ -20,7 +20,7 @@
 "Read One in Repository": {
 		"prefix": "rdone",
 		"body": [
-			"public ${1:returntype} Read(${2:inputtype} ${3:inputname}){",
+			"public object Read(${2:inputtype} ${3:inputname}){",
 			"\ttry\n\t{",
 			"\t\t${1:returntype} r = (from p in context.${1:returntype} where p.${4:whereAtt}==${3:inputname} select p).FirstOrDefault<${1:returntype}>();",
 		    "\t\treturn r;",
@@ -36,7 +36,7 @@
 "Read Many in Repository": {
 		"prefix": "rdmany",
 		"body": [
-			"public List<${1:returntype}> ${2:methodname}({3:inputtype} ${4:inputname}){",
+			"public List<object> ${2:methodname}({3:inputtype} ${4:inputname}){",
 			"\ttry\n\t{",
 			"\t\tList<${1:returntype}> r = (from p in context.${1:returntype} where p.${5:whereAtt}==${4:inputname} select p).ToList<${1:returntype}>();",
 		    "\t\treturn r;",
@@ -52,11 +52,11 @@
 "Update in Repository": {
 		"prefix": "upone",
 		"body": [
-			"public ${1:returntype} Update(${2:inputType} ${3:whereAtt},${1:returntype} newObject ){",
+			"public object Update(${2:inputType} ${3:whereAtt},object newObject ){",
 			"\ttry\n\t{",
 			"\t\t${1:returntype} r = (from p in context.${1:returntype} where p.${3:whereAtt}==${3:whereAtt} select p).FirstOrDefault<${1:returntype}>();",
 			"\t\t//var temp = r.${3:whereAtt};",
-			"\t\tr = newObject;",
+			"\t\tr = (${1:returntype}) newObject;",
 			"\t\t//r.${3:whereAtt} = temp;",
 			"\t\tcontext.Entry(r).State = Microsoft.EntityFrameworkCore.EntityState.Modified;",
             "\t\tcontext.SaveChanges();",
@@ -93,7 +93,7 @@
 		"[HttpPost]",
         "public IActionResult Create([FromBody]${1:classe} t){",
         "\ttry {",   
-        "\t\tvar c = repositorio.Add${1:classe}(t);",
+        "\t\tvar c = repositorio.Create(t);",
         "\t\tConsole.WriteLine(\"ok \");",
         "\t\treturn this.Ok(c);",
         "\t}",
