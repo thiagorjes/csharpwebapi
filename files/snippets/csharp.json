@@ -271,7 +271,7 @@
 		"using System.Collections.Generic;",
 		"using System.Linq;",
 		"using ${1:api}.Interfaces;",
-		"namespace ${1:api}.Controllers",
+		"namespace ${1:api}.Services",
 		"{",
     	"\tinternal class ${2:Class}Repository : IGenericRepository",
     	"\t{",
