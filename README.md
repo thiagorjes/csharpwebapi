@@ -22,7 +22,7 @@ Snippet criado para ser usado com webapi facilitando a criacao de m&eacute;todos
 
       |_Controllers:
       |     |_EntidadeController.cs
-      |_Interfaces:<br>
+      |_Interfaces:
       |     |_IGenericRepository.cs
       |_Services:
       |     |_EntidadeRepository.cs
