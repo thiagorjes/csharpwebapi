@@ -2,7 +2,7 @@
 	"name": "csharpwebapi",
 	"publisher": "thiagorjes",
 	"description": "c# snippets for webapi, creates controller class, methods for controllers, repository methods and empty methods ...",
-	"version": "0.5.3",
+	"version": "0.5.4",
 	"author": {
 		"name": "Thiago Cavalcante - Windows Insider Brasil",
 		"email": "thiago_rj_es@hotmail.com"
@@ -25,11 +25,12 @@
 		"type": "git",
 		"url": "https://github.com/thiagorjes/csharpwebapi"
 	},
+	"homepage": "https://github.com/thiagorjes/csharpwebapi/blob/master/README.md",
 	"license": "PT-br: fique a vontade para contribuir, usar e opinar!",
 	"readme": " PT-br: snippet criado para ser usado com webapi facilitando a criacao de métodos vazios, métodos para repositorios, métodos para controladores de servico e classe controladora de servico.\n A idéia é utilizar o padrão de desenvolvimento que consiste em Controller, Repository, Model/DBContext para criar um webservice rest json. ",
 	"__metadata": {
 		"id": "db227fb7-221d-4a76-b0bc-dff8520e0681",
 		"publisherId": "a10c55a6-91f6-4d51-aa48-ee87e418e6e7",
 		"publisherDisplayName": "thiagorjes#windowsinsiderbrasil"
-	}
+	}	
 }
