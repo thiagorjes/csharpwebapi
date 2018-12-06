@@ -273,7 +273,7 @@
 		"using ${1:api}.Interfaces;",
 		"namespace ${1:api}.Services",
 		"{",
-    	"\tinternal class ${2:Class}Repository : IGenericRepository",
+    	"\tpublic class ${2:Class}Repository : IGenericRepository",
     	"\t{",
         "\t\tprivate ${3:context}Context context;",
 		"\t\tprivate List<${2:Class}> _all;",		
