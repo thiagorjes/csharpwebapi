@@ -184,6 +184,9 @@
 		"using System.Linq;",
 		"using System.Threading.Tasks;",
 		"using Microsoft.AspNetCore.Mvc;",
+		"using ${1:api}.Models",
+		"using ${1:api}.Services",
+
 		"namespace ${1:api}.Controllers",
 		"{",
     	"\t[Route(\"${1:api}/[controller]\")]",
@@ -270,6 +273,7 @@
 		"using System;",
 		"using System.Collections.Generic;",
 		"using System.Linq;",
+		"using ${1:api}.Models",
 		"using ${1:api}.Interfaces;",
 		"namespace ${1:api}.Services",
 		"{",
