@@ -356,6 +356,35 @@
 		"\t}",
 		"}"
 		]
+	},
+	"Create Model Class":{
+		"prefix": "ModelClass",
+		"body":[
+		"using System;",
+		"using System.Collections.Generic;",
+		"using System.Linq;",
+		"using $WORKSPACE_NAME.Models",
+		"using $WORKSPACE_NAME.Interfaces;",
+		"namespace $WORKSPACE_NAME.Services",
+		"{",
+    	"\tpublic class $TM_FILENAME_BASE",
+		"\t{",
+		"\t\tpublic $TM_FILENAME_BASE()",
+		"\t\t{",
+		"\t\t\tConsole.WriteLine(\"Empty Class\");",
+		"\t\t}",
+		"\t}",
+		"}"
+		]
+	},
+	"Empty Construtor":{
+		"prefix": "constructor",
+		"body":[
+			"public ${1:className}()",
+			"{",
+			"}"
+		]
 	}
+
 
 }
