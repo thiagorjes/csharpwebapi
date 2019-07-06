@@ -193,7 +193,7 @@
 			"\tpublic class ${TM_FILENAME_BASE} : Controller",
 			"\t{",
 			"\t\t${TM_FILENAME_BASE/Controller//}Repository repositorio;",
-			"\t\tpublic ${TM_FILENAME_BASE/Controller//}(){",
+			"\t\tpublic ${TM_FILENAME_BASE/Controller//}Controller(){",
 			"\t\t\trepositorio = new ${TM_FILENAME_BASE/Controller//}Repository(new ${1:context}Context());",
 			"\t\t}",
 			"\t\t[HttpPost]",

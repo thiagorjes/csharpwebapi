@@ -43,3 +43,5 @@ e à equipe do Microsoft Virtual Academy.
 
 feedback: thiagorjes@outlook.com/thiagorjes@gmail.com  (assunto:csharpwebapi)
 
+**UPDATE NOTES**
+Mudanças em CtrlClass, RepoClass e criacao de ModelClass e constructor
