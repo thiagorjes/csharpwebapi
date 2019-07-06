@@ -275,7 +275,7 @@
 			"using System.Linq;",
 			"using ${WORKSPACE_NAME}.Models;",
 			"using ${WORKSPACE_NAME}.Interfaces;",
-			"namespace ${WORKSPACE_NAME}.Services;",
+			"namespace ${WORKSPACE_NAME}.Services",
 			"{",
 			"\tpublic class ${TM_FILENAME_BASE} : IGenericRepository",
 			"\t{",

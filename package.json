@@ -2,7 +2,7 @@
 	"name": "csharpwebapi",
 	"publisher": "thiagorjes",
 	"description": "c# snippets for webapi, creates controller class, methods for controllers, repository methods and empty methods ...",
-	"version": "0.7.2",
+	"version": "0.7.3",
 	"icon":"icon.png",
 	"author": {
 		"name": "Thiago Cavalcante - Windows Insider Brasil",
