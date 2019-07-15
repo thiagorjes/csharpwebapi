@@ -364,7 +364,7 @@
 			"using System.Collections.Generic;",
 			"using System.Linq;",
 			"using ${WORKSPACE_NAME}.Interfaces;",
-			"namespace ${WORKSPACE_NAME}.Models;",
+			"namespace ${WORKSPACE_NAME}.Models",
 			"{",
 			"\tpublic class ${TM_FILENAME_BASE}",
 			"\t{",
